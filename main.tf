@@ -6,12 +6,12 @@ resource "google_compute_instance" "vm1" {
 
     boot_disk {
       initialize_params {
-        image = var.boot_disk_image
+        image = var.image
       }
     }
 
     network_interface {
-      network = var.network_interface_network
+      network = var.netwrok
       access_config {
         
       }
